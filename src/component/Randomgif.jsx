@@ -23,12 +23,12 @@ const Randomgif = () => {
     const generator = () => {
       getRandomGif()
     }
-    
+
   return (
-    <div className="pt-[20px] h-auto">
-        <h1>Random GIF</h1>
-        <img src={gif} alt="" />
-        <button className="pd-[20px] border border-black mt-[20px]" onClick={generator}>Generate</button>
+    <div className="p-[20px] mt-[20px] w-[40%] h-auto bg-green-500 border border-black rounded-xl">
+        <h1 className="text-2xl uppercase p-2 font-bold text-center mb-2 bg-yellow-200 border border-yellow-800 rounded-lg">Random GIF</h1>
+        <img src={gif} alt="" className="w-full h-[350px]"/>
+        <button className="p-[10px] w-full font-bold text-xl rounded-md border border-black uppercase mt-[20px] bg-red-500 " onClick={generator}>Generate</button>
     </div>
   )
 }
